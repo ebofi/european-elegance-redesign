@@ -27,17 +27,13 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "glass border-b border-border/50 py-3"
-          : "bg-transparent py-5"
+        isScrolled ? "glass border-b border-border/50 py-3" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
-          <span className="text-editorial text-2xl font-semibold tracking-tight text-foreground">
-            Candone
-          </span>
+          <img src="https://auho.cloud/logo.png" alt="Candone" className="h-8 w-auto object-contain" />
         </a>
 
         {/* Desktop Navigation */}
@@ -70,11 +66,7 @@ const Header = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? (
-            <X className="h-6 w-6 text-foreground" />
-          ) : (
-            <Menu className="h-6 w-6 text-foreground" />
-          )}
+          {isMobileMenuOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
         </button>
       </div>
 
