@@ -16,9 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 11%;
     
-    /* British Racing Green */
-    --primary: 160 35% 25%;
+    /* Candone Navy Blue */
+    --primary: 215 60% 20%;
     --primary-foreground: 40 20% 97%;
+    --primary-glow: 215 65% 35%;
     
     --secondary: 40 15% 93%;
     --secondary-foreground: 0 0% 11%;
@@ -26,7 +27,7 @@
     --muted: 40 10% 90%;
     --muted-foreground: 0 0% 40%;
     
-    --accent: 160 35% 25%;
+    --accent: 215 60% 20%;
     --accent-foreground: 40 20% 97%;
     
     --destructive: 0 84% 60%;
@@ -34,7 +35,7 @@
     
     --border: 40 10% 88%;
     --input: 40 10% 88%;
-    --ring: 160 35% 25%;
+    --ring: 215 60% 20%;
     
     --radius: 0.75rem;
     
@@ -69,8 +70,9 @@
     --popover: 0 0% 11%;
     --popover-foreground: 40 20% 97%;
     
-    --primary: 160 35% 40%;
+    --primary: 215 60% 55%;
     --primary-foreground: 0 0% 11%;
+    --primary-glow: 215 65% 65%;
     
     --secondary: 0 0% 15%;
     --secondary-foreground: 40 20% 97%;
@@ -78,7 +80,7 @@
     --muted: 0 0% 15%;
     --muted-foreground: 40 10% 60%;
     
-    --accent: 160 35% 40%;
+    --accent: 215 60% 55%;
     --accent-foreground: 0 0% 11%;
     
     --destructive: 0 62% 30%;
@@ -86,7 +88,7 @@
     
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 160 35% 40%;
+    --ring: 215 60% 55%;
     
     --glass-bg: 0 0% 0% / 0.5;
     --glass-border: 0 0% 100% / 0.1;
