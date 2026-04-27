@@ -33,7 +33,11 @@ const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
-          <img src="https://auho.cloud/logo.png" alt="Candone" className="h-8 w-auto object-contain" />
+          {" "}
+          <span className="text-editorial text-2xl font-semibold tracking-tight text-foreground">
+            {" "}
+            Candone Global{" "}
+          </span>{" "}
         </a>
 
         {/* Desktop Navigation */}
