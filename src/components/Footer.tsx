@@ -170,9 +170,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-6 md:gap-12 pt-4 border-t border-background/10">
-            <a href="mailto:stalinstephen@candone.net" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+            <a href="mailto:hello@candone.net" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
               <Mail className="h-4 w-4" />
-              stalinstephen@candone.net
+              hello@candone.net
             </a>
             <span className="flex items-center gap-2 text-sm text-background/60">
               <MapPin className="h-4 w-4" />

@@ -226,8 +226,8 @@ const LeadFormDialog = ({
           </div>
 
           <p className="text-xs text-muted-foreground">
-            Submissions are delivered to{" "}
-            <span className="font-medium text-foreground">stalinstephen@candone.net</span>.
+            Or email us directly at{" "}
+            <span className="font-medium text-foreground">hello@candone.net</span>.
           </p>
 
           <DialogFooter>

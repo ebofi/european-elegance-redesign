@@ -43,7 +43,7 @@ const ContactSection = () => {
 
             <div className="space-y-5 mb-10">
               <a
-                href="mailto:stalinstephen@candone.net"
+                href="mailto:hello@candone.net"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
@@ -51,7 +51,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider">Email</p>
-                  <p className="font-medium text-foreground">stalinstephen@candone.net</p>
+                  <p className="font-medium text-foreground">hello@candone.net</p>
                 </div>
               </a>
               <div className="flex items-center gap-4">
