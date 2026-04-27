@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LeadFormDialog from "@/components/LeadFormDialog";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,7 +20,8 @@ const Header = () => {
     { label: "Expertise", href: "#expertise" },
     { label: "For Employers", href: "#employers" },
     { label: "For Candidates", href: "#candidates" },
-    { label: "Contact", href: "#contact" },
+    { label: "Study Abroad", href: "#study-abroad" },
+    { label: "Contact", href: "#contact-us" },
   ];
 
   return (
@@ -53,12 +55,13 @@ const Header = () => {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <Button variant="ghost" size="sm">
-            Sign In
-          </Button>
-          <Button variant="hero" size="sm">
-            Get Started
-          </Button>
+          <LeadFormDialog
+            trigger={
+              <Button variant="hero" size="sm">
+                Get in Touch
+              </Button>
+            }
+          />
         </div>
 
         {/* Mobile Menu Button */}
@@ -90,12 +93,13 @@ const Header = () => {
               </a>
             ))}
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
-              <Button variant="ghost" className="w-full justify-center">
-                Sign In
-              </Button>
-              <Button variant="hero" className="w-full justify-center">
-                Get Started
-              </Button>
+              <LeadFormDialog
+                trigger={
+                  <Button variant="hero" className="w-full justify-center">
+                    Get in Touch
+                  </Button>
+                }
+              />
             </div>
           </nav>
         </div>

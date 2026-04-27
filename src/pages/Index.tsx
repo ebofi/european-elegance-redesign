@@ -5,6 +5,8 @@ import TrustBar from "@/components/TrustBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import DualPathSection from "@/components/DualPathSection";
+import StudyAbroadSection from "@/components/StudyAbroadSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +19,8 @@ const Index = () => {
       <ExpertiseSection />
       <WhyUsSection />
       <DualPathSection />
+      <StudyAbroadSection />
+      <ContactSection />
       <Footer />
     </div>
   );
