@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Users } from "lucide-react";
 import heroImage from "@/assets/hero-office.jpg";
+import LeadFormDialog from "@/components/LeadFormDialog";
 
 const Hero = () => {
   return (
@@ -39,16 +40,30 @@ const Hero = () => {
 
           {/* Dual Path Entry */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16 opacity-0 animate-fade-in-up animation-delay-300">
-            <Button variant="hero" size="lg" className="group">
-              <Building2 className="h-5 w-5" />
-              For Employers
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="heroOutline" size="lg" className="group">
-              <Users className="h-5 w-5" />
-              For Candidates
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <LeadFormDialog
+              defaultInquiryType="employer"
+              title="Hire with Candone"
+              description="Tell us about the role you're hiring for and our advisors will be in touch."
+              trigger={
+                <Button variant="hero" size="lg" className="group">
+                  <Building2 className="h-5 w-5" />
+                  For Employers
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              }
+            />
+            <LeadFormDialog
+              defaultInquiryType="candidate"
+              title="Find your next role"
+              description="Share your background and what you're looking for — we'll match you with opportunities."
+              trigger={
+                <Button variant="heroOutline" size="lg" className="group">
+                  <Users className="h-5 w-5" />
+                  For Candidates
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              }
+            />
           </div>
 
           {/* Stats */}

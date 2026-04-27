@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import LeadFormDialog from "@/components/LeadFormDialog";
 
 const Footer = () => {
   const footerLinks = {
@@ -7,7 +8,7 @@ const Footer = () => {
       { label: "About Us", href: "#about" },
       { label: "Our Team", href: "#" },
       { label: "Careers", href: "#" },
-      { label: "Contact", href: "#contact" },
+      { label: "Contact", href: "#contact-us" },
     ],
     employers: [
       { label: "Executive Search", href: "#" },
@@ -25,7 +26,7 @@ const Footer = () => {
       { label: "Finance & Banking", href: "#" },
       { label: "Technology", href: "#" },
       { label: "Professional Services", href: "#" },
-      { label: "Life Sciences", href: "#" },
+      { label: "Study Abroad", href: "#study-abroad" },
     ],
   };
 
@@ -43,19 +44,24 @@ const Footer = () => {
               we're here to help.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button 
-                size="lg" 
-                className="bg-background text-foreground hover:bg-background/90 group"
-              >
-                Get in Touch
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <LeadFormDialog
+                trigger={
+                  <Button
+                    size="lg"
+                    className="bg-background text-foreground hover:bg-background/90 group"
+                  >
+                    Get in Touch
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                }
+              />
+              <Button
+                variant="outline"
+                size="lg"
                 className="border-background/30 text-background hover:bg-background/10"
+                asChild
               >
-                View All Jobs
+                <a href="#study-abroad">Study Abroad</a>
               </Button>
             </div>
           </div>
@@ -140,18 +146,37 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="border-t border-background/10 mt-12 pt-8">
-          <div className="flex flex-wrap gap-6 md:gap-12 mb-8">
-            <a href="mailto:hello@candone.net" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div>
+              <p className="text-xs text-background/40 uppercase tracking-widest mb-2">UK Office</p>
+              <p className="text-sm text-background/70 mb-2">36 Kells Lane, Gateshead, England, NE9 5SJ</p>
+              <a href="tel:+447388429371" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+                <Phone className="h-3.5 w-3.5" /> +44 7388 429371
+              </a>
+            </div>
+            <div>
+              <p className="text-xs text-background/40 uppercase tracking-widest mb-2">Europe – Portugal</p>
+              <p className="text-sm text-background/70 mb-2">FloXera, J Canleas, Largo José Cavaco Vieira, 8100-012 Alte, Portugal</p>
+              <a href="tel:+447388429371" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+                <Phone className="h-3.5 w-3.5" /> +44 7388 429371
+              </a>
+            </div>
+            <div>
+              <p className="text-xs text-background/40 uppercase tracking-widest mb-2">India Office</p>
+              <p className="text-sm text-background/70 mb-2">Candone Arcade, Enathu, Adoor, Pathanamthitta Dist, Kerala, India</p>
+              <a href="tel:+918606355566" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+                <Phone className="h-3.5 w-3.5" /> +91 8606 355 566
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-6 md:gap-12 pt-4 border-t border-background/10">
+            <a href="mailto:stalinstephen@candone.net" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
               <Mail className="h-4 w-4" />
-              hello@candone.net
-            </a>
-            <a href="tel:+442012345678" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
-              <Phone className="h-4 w-4" />
-              +44 20 1234 5678
+              stalinstephen@candone.net
             </a>
             <span className="flex items-center gap-2 text-sm text-background/60">
               <MapPin className="h-4 w-4" />
-              London, United Kingdom
+              UK · Europe · India
             </span>
           </div>
         </div>
